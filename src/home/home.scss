@@ -1,0 +1,33 @@
+.home {
+  height: 100vh;
+  color: whitesmoke;
+  justify-content: center;
+  display: flex;
+
+  .cover-img {
+    display: flex;
+    background: url("../../public/cover.jpg");
+    min-height: 800px;
+    background-attachment: fixed;
+    background-position: center;
+    justify-content: space-between;
+    background-position: 0px 0px;
+    background-repeat: repeat-y;
+    animation: animatedBackground 15s linear infinite alternate;
+    width: 100%;
+
+    .welcome-text-left,
+    .welcome-text-right {
+      align-items: center;
+      display: flex;
+    }
+    @keyframes animatedBackground {
+      from {
+        background-position: 90% 50%;
+      }
+      to {
+        background-position: 50% 70%;
+      }
+    }
+  }
+}
