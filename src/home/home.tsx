@@ -1,17 +1,19 @@
-// Description
-// Services
-// Feedback - carousel
-
 import React from "react";
+import { CoverImageComponent } from "./cover-image-section";
+import { AboutComponent } from "./about-section";
+import { ChooseUsComponent } from "./choose-us-section";
+import { BlobSceneSvg, OutlineWave, LayeredWavesSvg } from "../assets/svg";
 import "./home.scss";
 
 export const Home = () => {
   return (
     <div className="home">
-      <div className="cover-img">
-        <h1 className="welcome-text-left">Are you looking for fun?</h1>
-        <h1 className="welcome-text-right">The answer is Pet Project!</h1>
-      </div>
+      <CoverImageComponent />
+      <BlobSceneSvg />
+      <ChooseUsComponent />
+      <OutlineWave />
+      <AboutComponent />
+      <LayeredWavesSvg />
     </div>
   );
 };

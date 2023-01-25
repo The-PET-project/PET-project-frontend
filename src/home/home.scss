@@ -1,33 +1,99 @@
 .home {
-  height: 100vh;
-  color: whitesmoke;
-  justify-content: center;
-  display: flex;
+  height: 100%;
+  width: 100%;
+  font-family: "Pacifico", cursive;
+  font-size: 1.5rem;
 
-  .cover-img {
-    display: flex;
+  h1 {
+    color: whitesmoke;
+  }
+
+  h2 {
+    color: #212529;
+    padding: 2rem 0;
+  }
+
+  // COVER IMAGE SECTION
+
+  .cover-img-section {
     background: url("../../public/cover.jpg");
-    min-height: 800px;
-    background-attachment: fixed;
-    background-position: center;
-    justify-content: space-between;
-    background-position: 0px 0px;
-    background-repeat: repeat-y;
-    animation: animatedBackground 15s linear infinite alternate;
+    height: 100vh;
     width: 100%;
+    background-attachment: fixed;
+    background-position: cover;
+    background-repeat: no-repeat;
+    animation: animatedBackground 25s linear infinite alternate;
+    background-color: #212529;
+    padding-top: 56px;
+  }
 
-    .welcome-text-left,
-    .welcome-text-right {
-      align-items: center;
-      display: flex;
-    }
+  h1 {
+    text-shadow: 3px 3px 50px whitesmoke;
+    color: #00aed3;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(2px);
+    padding: 1rem;
+
     @keyframes animatedBackground {
       from {
-        background-position: 90% 50%;
+        background-position: bottom;
       }
       to {
-        background-position: 50% 70%;
+        background-position: top;
       }
     }
+  }
+
+  // WHY CHOOSE US SECTION
+
+  .choose-us {
+    margin-top: 50px;
+    .choose-us-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .figure {
+        text-align: center;
+        padding: 0 1rem;
+        width: 70vw;
+
+        @media screen and (max-width: 576px) {
+          width: 100vh;
+        }
+      }
+
+      .figure-img {
+        border-radius: 50%;
+        padding: 15px;
+      }
+    }
+  }
+
+  // ABOUT US SECTION
+
+  .about {
+    .about-row {
+      min-height: 350px;
+      margin-top: 3rem;
+      p {
+        color: #6c757d;
+      }
+      h2 {
+        background-color: whitesmoke;
+      }
+      .figure-img {
+        padding-bottom: 2rem;
+        border-bottom: 15px dotted #00aed3;
+      }
+    }
+  }
+
+  // SVG
+
+  .blob-scene-svg {
+    z-index: -1;
+    position: absolute;
   }
 }

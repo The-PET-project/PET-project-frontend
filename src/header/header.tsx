@@ -1,10 +1,10 @@
 import React from "react";
-import { Nav, Navbar, Row } from "react-bootstrap";
+import { Container, Nav, Navbar, Row } from "react-bootstrap";
 import "./header.scss";
 
 export const Header = () => {
   return (
-    <div className="header">
+    <Container className="header">
       <Navbar
         bg="dark"
         variant="dark"
@@ -12,22 +12,13 @@ export const Header = () => {
         fixed="top"
       >
         <Nav.Item className="me-auto">
-          <Navbar.Brand>
-            <img
-              alt="Home Page Logo"
-              src="dog.png"
-              width="30"
-              height="30"
-              className="d-inline-block align-top"
-            />{" "}
-            Pet Project
-          </Navbar.Brand>
+          <Navbar.Brand className="mx-1">Pet Project</Navbar.Brand>
         </Nav.Item>
         <Nav.Item>
           <Navbar.Brand>Sign Up</Navbar.Brand>
         </Nav.Item>
         <Navbar.Brand>Sign in</Navbar.Brand>
       </Navbar>
-    </div>
+    </Container>
   );
 };
