@@ -1,12 +1,24 @@
 import React from "react";
-import "./App.scss";
+import { createBrowserRouter } from "react-router-dom";
+import "./app.scss";
+import { Header } from "./header/header";
+import { Home } from "./home/home";
+import { Footer } from "./footer/footer";
 
-const App: React.FC = () => {
-  return (
-    <div className="wrapper">
-      <h1>Pet Project</h1>
-    </div>
-  );
-};
+const App = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home />,
+  },
+]);
+
+// const App: React.FC = () => {
+//   return (
+//     <>
+//       <Header />
+//       <Footer />
+//     </>
+//   );
+// };
 
 export default App;
