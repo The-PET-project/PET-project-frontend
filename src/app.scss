@@ -1,0 +1,9 @@
+@use "./variables" as vars;
+@import "./header/header";
+@import "./home/home";
+@import "./footer/footer";
+@import "~bootstrap/scss/bootstrap";
+
+body {
+  font-family: "Pacifico", cursive;
+}

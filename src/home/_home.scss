@@ -1,0 +1,98 @@
+.home {
+  height: 100%;
+  width: 100%;
+  font-size: 1.5rem;
+
+  h1 {
+    color: vars.$color-primary-light;
+  }
+
+  h2 {
+    color: vars.$color-primary-dark;
+    padding: 2rem 0;
+  }
+
+  // COVER IMAGE SECTION
+
+  .cover-img-section {
+    background: url("/public/cover.jpg");
+    height: 100vh;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: cover;
+    background-repeat: no-repeat;
+    animation: animatedBackground 25s linear infinite alternate;
+    background-color: vars.$color-primary-dark;
+    padding-top: 56px;
+  }
+
+  h1 {
+    text-shadow: 3px 3px 50px vars.$color-primary-light;
+    color: vars.$color-primary-blue;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(2px);
+    padding: 1rem;
+
+    @keyframes animatedBackground {
+      from {
+        background-position: bottom;
+      }
+      to {
+        background-position: top;
+      }
+    }
+  }
+
+  // WHY CHOOSE US SECTION
+
+  .choose-us {
+    margin-top: 50px;
+    .choose-us-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .figure {
+        text-align: center;
+        padding: 0 1rem;
+        width: 70vw;
+
+        @media screen and (max-width: 576px) {
+          width: 100vh;
+        }
+      }
+
+      .figure-img {
+        border-radius: 50%;
+        padding: 15px;
+      }
+    }
+  }
+
+  // ABOUT US SECTION
+
+  .about {
+    .about-row {
+      min-height: 350px;
+      margin-top: 3rem;
+      p {
+        color: vars.$color-primary-grey;
+      }
+      h2 {
+        background-color: vars.$color-primary-light;
+      }
+      .figure-img {
+        padding-bottom: 2rem;
+        border-bottom: 15px dotted vars.$color-primary-blue;
+      }
+    }
+  }
+
+  // SVG
+
+  .blob-scene-svg {
+    z-index: -1;
+    position: absolute;
+  }
+}
