@@ -1,17 +1,18 @@
 import React from "react";
-import { Header } from "./header/header";
+import { useRoutes } from "react-router-dom";
 import { Home } from "./home/home";
-import { Footer } from "./footer/footer";
+import { Contact } from "./contact/contact";
 import "./app.scss";
 
-const App: React.FC = () => {
-  return (
-    <>
-      <Header />
-      <Home />
-      <Footer />
-    </>
-  );
+const App = () => {
+  let element = useRoutes([
+    {
+      path: "/",
+      element: <Home />,
+    },
+    { path: "contact", element: <Contact /> },
+  ]);
+  return element;
 };
 
 export default App;

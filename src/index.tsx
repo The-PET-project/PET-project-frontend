@@ -1,8 +1,14 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
-import { RouterProvider } from "react-router-dom";
-import AppRouter from "./app";
+import { BrowserRouter } from "react-router-dom";
+import App from "./app";
+import { Header } from "./header/header";
+import { Footer } from "./footer/footer";
 
 createRoot(document.getElementById("root")).render(
-  <RouterProvider router={AppRouter} />
+  <BrowserRouter>
+    <Header />
+    <App />
+    <Footer />
+  </BrowserRouter>
 );

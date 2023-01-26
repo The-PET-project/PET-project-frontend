@@ -1,3 +1,10 @@
 .header {
   color: vars.$color-primary-light;
+
+  a {
+    color: vars.$color-primary-light;
+    &:hover {
+      color: vars.$color-primary-green;
+    }
+  }
 }
