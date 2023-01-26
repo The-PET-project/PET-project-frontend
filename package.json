@@ -4,16 +4,20 @@
   "description": "",
   "main": "index.tsx",
   "scripts": {
-    "start": "webpack-cli serve --mode=development --env development --open --hot",
     "build": "webpack --mode=production --env production --progress",
+    "clean": "rm -rf build",
     "lint": "eslint --cache \"src/**/*.{js,jsx,ts,tsx,css,scss,json}\"",
+    "start": "webpack-cli serve --mode=development --env development --open --hot",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/react-bootstrap": "^0.32.32",
+    "bootstrap": "^5.2.3",
     "react": "^18.2.0",
+    "react-bootstrap": "^2.7.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
