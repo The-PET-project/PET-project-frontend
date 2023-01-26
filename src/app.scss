@@ -1,8 +1,9 @@
+@use "./variables" as vars;
+@import "./header/header";
+@import "./home/home";
+@import "./footer/footer";
 @import "~bootstrap/scss/bootstrap";
 
-.wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: green;
+body {
+  font-family: "Pacifico", cursive;
 }

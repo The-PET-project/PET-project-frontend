@@ -1,6 +1,5 @@
 import React from "react";
-import { Container, Nav, Navbar, Row } from "react-bootstrap";
-import "./header.scss";
+import { Container, Nav, Navbar } from "react-bootstrap";
 
 export const Header = () => {
   return (

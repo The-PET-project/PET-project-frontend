@@ -1,0 +1,9 @@
+.footer {
+  background-color: vars.$color-primary-green;
+  color: vars.$color-primary-dark;
+  padding: 1rem;
+
+  svg {
+    fill: vars.$color-primary-dark;
+  }
+}
