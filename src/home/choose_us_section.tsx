@@ -37,7 +37,7 @@ export const ChooseUsComponent = () => {
       </Row>
       <Row className="choose-us-item">
         <Figure className="d-block d-md-flex justify-content-center align-items-center text-center">
-          <Figure.Image width={200} height={200} src="dog-and-cat.jpg" />
+          <Figure.Image width={200} height={200} src="dog_and_cat.jpg" />
           <Figure.Caption>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
