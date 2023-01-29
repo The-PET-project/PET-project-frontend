@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Container, Nav, Navbar } from "react-bootstrap";
 
 export const Header = () => {
@@ -11,11 +12,16 @@ export const Header = () => {
         fixed="top"
       >
         <Nav.Item className="me-auto">
-          <Navbar.Brand className="mx-1">Pet Project</Navbar.Brand>
+          <Navbar.Brand className="mx-1">
+            <Link to="/">Pet Project</Link>
+          </Navbar.Brand>
         </Nav.Item>
         <Nav.Item>
-          <Navbar.Brand>Sign Up</Navbar.Brand>
+          <Navbar.Brand>
+            <Link to="/contact">Contact us</Link>
+          </Navbar.Brand>
         </Nav.Item>
+        <Navbar.Brand>Sign up</Navbar.Brand>
         <Navbar.Brand>Sign in</Navbar.Brand>
       </Navbar>
     </Container>

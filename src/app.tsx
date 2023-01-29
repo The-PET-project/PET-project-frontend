@@ -1,23 +1,15 @@
 import React from "react";
+import { createRoot } from "react-dom/client";
+import { BrowserRouter } from "react-router-dom";
+import AppRouter from "./app_router";
 import { Header } from "./header/header";
-import { Home } from "./home/home";
 import { Footer } from "./footer/footer";
-import { User } from "./model/user";
 import "./app.scss";
-import { Address } from "./model/address";
 
-const App: React.FC = () => {
-  const user = new User("Iza", "Izamail", "Izapassword", "Iza", "Bella");
-
-  console.log("------", new Date());
-
-  return (
-    <>
-      <Header />
-      <Home />
-      <Footer />
-    </>
-  );
-};
-
-export default App;
+createRoot(document.getElementById("root")).render(
+  <BrowserRouter>
+    <Header />
+    <AppRouter />
+    <Footer />
+  </BrowserRouter>
+);
