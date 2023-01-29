@@ -8,6 +8,7 @@ export class User {
   private _mobile: string;
   private _firstName: string;
   private _lastName: string;
+  private _middleName: string;
   private _address: Address;
 
   constructor(
@@ -74,6 +75,14 @@ export class User {
 
   set lastName(value: string) {
     this._lastName = value;
+  }
+
+  get middleName() {
+    return this._middleName;
+  }
+
+  set middleName(value: string) {
+    this._middleName = value;
   }
 
   get address(): Address {
