@@ -1,9 +1,14 @@
 @use "./variables" as vars;
+@import "./contact/contact.scss";
+@import "./footer/footer";
 @import "./header/header";
 @import "./home/home";
-@import "./footer/footer";
 @import "~bootstrap/scss/bootstrap";
 
 body {
   font-family: "Pacifico", cursive;
+
+  a {
+    text-decoration: none;
+  }
 }

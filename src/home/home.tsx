@@ -2,7 +2,7 @@ import React from "react";
 import { CoverImageComponent } from "./cover-image-section";
 import { AboutComponent } from "./about-section";
 import { ChooseUsComponent } from "./choose-us-section";
-import { BlobSceneSvg, OutlineWave, LayeredWavesSvg } from "../assets/svg";
+import { BlobSceneSvg, OutlineWave } from "../assets/svg";
 
 export const Home = () => {
   return (
@@ -12,7 +12,6 @@ export const Home = () => {
       <ChooseUsComponent />
       <OutlineWave />
       <AboutComponent />
-      <LayeredWavesSvg />
     </div>
   );
 };
