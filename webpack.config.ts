@@ -10,7 +10,7 @@ interface Configuration extends WebpackConfiguration {
 }
 
 const webpackConfig = (): Configuration => ({
-  entry: "./src/index.tsx",
+  entry: "./src/app.tsx",
   ...(process.env.production || !process.env.development
     ? {}
     : { devtool: "eval-source-map" }),

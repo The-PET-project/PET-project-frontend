@@ -1,18 +1,15 @@
 import React from "react";
-import { useRoutes } from "react-router-dom";
-import { Home } from "./home/home";
-import { Contact } from "./contact/contact";
+import { createRoot } from "react-dom/client";
+import { BrowserRouter } from "react-router-dom";
+import AppRouter from "./app_router";
+import { Header } from "./header/header";
+import { Footer } from "./footer/footer";
 import "./app.scss";
 
-const App = () => {
-  let element = useRoutes([
-    {
-      path: "/",
-      element: <Home />,
-    },
-    { path: "contact", element: <Contact /> },
-  ]);
-  return element;
-};
-
-export default App;
+createRoot(document.getElementById("root")).render(
+  <BrowserRouter>
+    <Header />
+    <AppRouter />
+    <Footer />
+  </BrowserRouter>
+);
