@@ -7,12 +7,15 @@ export const Contact = () => {
     <div className="contact d-flex align-items-center justify-content-around mx-auto">
       <Row>
         <Form>
-          <Form.Group controlId="exampleForm.ControlInput1">
-            <Form.Control placeholder="Name" />
-            <Form.Label className="my-3">Email address</Form.Label>
-            <Form.Control type="email" placeholder="name@example.com" />
+          <Form.Group controlId="nameId">
+            <Form.Label className="my-3">Name</Form.Label>
+            <Form.Control placeholder="Your full name" />
           </Form.Group>
-          <Form.Group controlId="exampleForm.ControlTextarea1">
+          <Form.Group controlId="emailId">
+            <Form.Label className="my-3">Email address</Form.Label>
+            <Form.Control type="email" placeholder="your@email.com" />
+          </Form.Group>
+          <Form.Group controlId="messageId">
             <Form.Label className="my-3">Message</Form.Label>
             <Form.Control as="textarea" rows={3} />
           </Form.Group>
