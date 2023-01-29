@@ -1,3 +1,3 @@
 export enum ServiceType {
-  WALKING = "WALKING",
+  PET_WALKING = "PET-WALKING",
 }
