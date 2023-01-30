@@ -16,13 +16,15 @@ export class User {
     email: string,
     password: string,
     firstname: string,
-    lastname: string
+    lastname: string,
+    middlename?: string
   ) {
     this._username = username;
     this._email = email;
     this._password = password;
     this._firstName = firstname;
     this._lastName = lastname;
+    this._middleName = middlename;
   }
 
   get username() {

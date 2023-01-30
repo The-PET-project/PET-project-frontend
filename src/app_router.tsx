@@ -1,6 +1,7 @@
 import React from "react";
 import { useRoutes } from "react-router-dom";
 import { Home } from "./home/home";
+import { Registration } from "./registration/registration";
 import { Contact } from "./contact/contact";
 
 const AppRouter = () => {
@@ -9,7 +10,8 @@ const AppRouter = () => {
       path: "/",
       element: <Home />,
     },
-    { path: "contact", element: <Contact /> },
+    { path: "/contact", element: <Contact /> },
+    { path: "/sign-up", element: <Registration /> },
   ]);
   return element;
 };
