@@ -21,7 +21,11 @@ export const Header = () => {
             <Link to="/contact">Contact us</Link>
           </Navbar.Brand>
         </Nav.Item>
-        <Navbar.Brand>Sign up</Navbar.Brand>
+        <Nav.Item>
+          <Navbar.Brand>
+            <Link to="/sign-up">Sign up</Link>
+          </Navbar.Brand>
+        </Nav.Item>
         <Navbar.Brand>Sign in</Navbar.Brand>
       </Navbar>
     </Container>

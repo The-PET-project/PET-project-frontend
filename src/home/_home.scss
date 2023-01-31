@@ -28,13 +28,14 @@
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(2px);
     padding: 1rem;
+    margin-top: 8rem;
 
     @keyframes animatedBackground {
       from {
-        background-position: bottom;
+        background-position: top;
       }
       to {
-        background-position: top;
+        background-position: bottom;
       }
     }
   }

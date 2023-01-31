@@ -6,6 +6,7 @@ export const Contact = () => {
   return (
     <div className="contact d-flex align-items-center justify-content-around mx-auto">
       <Row>
+        <h1>Contact us</h1>
         <Form>
           <Form.Group controlId="nameId">
             <Form.Label className="my-3">Name</Form.Label>
