@@ -1,8 +1,8 @@
 import React from "react";
 import { useRoutes } from "react-router-dom";
-import { Home } from "./home/home";
-import { Registration } from "./registration/registration";
-import { Contact } from "./contact/contact";
+import { Home } from "./views/home/home";
+import { Registration } from "./views/registration/registration";
+import { Contact } from "./views/contact/contact";
 
 const AppRouter = () => {
   let element = useRoutes([

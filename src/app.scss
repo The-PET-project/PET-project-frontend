@@ -1,9 +1,9 @@
 @use "./variables" as vars;
-@import "./contact/contact.scss";
-@import "./footer/footer";
-@import "./header/header";
-@import "./home/home";
-@import "./registration/registration.scss";
+@import "./views/contact/contact.scss";
+@import "./views/components/footer/footer";
+@import "./views/components/header/header";
+@import "./views/home/home";
+@import "./views/registration/registration.scss";
 @import "~bootstrap/scss/bootstrap";
 
 body {

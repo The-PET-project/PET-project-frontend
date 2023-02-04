@@ -1,6 +1,6 @@
 import React from "react";
-import { Col, Container, Row } from "react-bootstrap";
-import { EmailSvg, LayeredWavesSvg, MobileSvg } from "../assets/svg";
+import { Col, Row } from "react-bootstrap";
+import { EmailSvg, LayeredWavesSvg, MobileSvg } from "../../assets/svg";
 
 export const Footer = () => {
   const currentYear: number = new Date().getFullYear();
